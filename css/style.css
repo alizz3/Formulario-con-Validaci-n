@@ -23,11 +23,16 @@ h1 {
     margin-bottom: 10px;
     text-align: center;
 }
+label{
+    color: rgb(35, 11, 49);
+    font-weight: 700;
+}
 
 .frm-container {
     margin: 20px auto;
+    min-width: 270px;
     max-width: 30rem;
-    width: 100%;
+    width: 90%;
     background-color: rgba(137, 43, 226, 0.322);
     padding: 2rem;
 }
@@ -38,8 +43,9 @@ h1 {
     height: 100%;
     padding: 0 1rem;
     color: blueviolet;
-    box-shadow: 3px 3px 3px black;
+    box-shadow: 2px 2px 7px rgb(25, 1, 43);
     border-radius: 5px;
+    font-weight: 700;
 }
 
 .frm-input:focus {
@@ -77,6 +83,7 @@ h1 {
     font-size: 11px;
     visibility: hidden;
     opacity: 0;
+    transition: all 0.5s;
 }
 
 .msn-error-visible{
@@ -91,8 +98,8 @@ h1 {
 .frm-icono{
     color: rgb(255, 255, 255);
     position: absolute;
-    right: 0.1rem;
-    top: 1rem;
+    right: 0.5rem;
+    top: 0.7rem;
     z-index: 100;
     opacity: 0;
 }
@@ -100,9 +107,12 @@ h1 {
 .error .frm-icono{
     color: crimson;
     opacity: 1;
+    transition: all 0.5s;
+
 }
 
 .success .frm-icono{
-    color: blue;
+    color: indigo;
     opacity: 1;
+    transition: all 0.5s;
 }
