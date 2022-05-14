@@ -69,7 +69,7 @@ label{
     color: antiquewhite;
     padding: 1rem 2rem;
     border-radius: 5px;
-
+    margin: 0 auto;
 }
 
 .btn-enviar:hover {
@@ -80,15 +80,20 @@ label{
 
 .msn-error{
     color: crimson;
-    font-size: 11px;
+    font-size: 1px;
+    font-weight: 800;
     visibility: hidden;
     opacity: 0;
     transition: all 0.5s;
 }
 
 .msn-error-visible{
+    font-size: 11px;
+    font-weight: 800;
     visibility:visible;
     opacity: 1;
+    margin-bottom: 50px;
+
 }
 
 .frm-group-input{
@@ -113,6 +118,29 @@ label{
 
 .success .frm-icono{
     color: indigo;
+    opacity: 1;
+    transition: all 0.5s;
+}
+
+
+.frm-no-enviado{
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 5px 2px;
+    background-color: rgba(76, 0, 130, 0.473);
+    color: aliceblue;
+    text-shadow: 1px 2px 3px rgb(25, 1, 43);
+    text-align: center;
+    font-size: 1px;
+    font-weight: 0;
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.5s;
+}
+.frm-no-enviado-visible{
+    font-size: 20px;
+    font-weight: 800;
+    visibility: visible;
     opacity: 1;
     transition: all 0.5s;
 }
